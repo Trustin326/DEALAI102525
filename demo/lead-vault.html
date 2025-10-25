@@ -1,1 +1,37 @@
 
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Lead Vault — DealFlow AI</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head><body>
+<header class="hero"><div class="wrap">
+  <img src="../assets/img/chichi.png" alt="ChiChi" />
+  <h1>Lead Vault (Demo)</h1>
+  <p class="lead">Add, tag and view prospects. Stored locally in your browser with localStorage.</p>
+  <div class="row"><a class="btn" href="../index.html#demo">Back to Demos</a><button class="btn" onclick="exportLeadsCSV()">Export CSV</button><button class="btn" onclick="resetDemoData()">Reset Demo Data</button></div>
+</div></header>
+
+<section><div class="wrap">
+  <form onsubmit="addLead(event)" class="card">
+    <div class="grid">
+      <div><label>Name</label><input id="lead_name" placeholder="Jane Client" required></div>
+      <div><label>Email</label><input id="lead_email" type="email" placeholder="jane@company.com" required></div>
+      <div><label>Source</label><input id="lead_source" placeholder="Instagram DM / Calendly / Referral"></div>
+      <div><label>Tag</label><input id="lead_tag" placeholder="Hot / Warm / Cold"></div>
+    </div>
+    <button class="btn" type="submit">Add Lead</button>
+    <p class="small">Total leads: <strong id="lead_count">0</strong></p>
+  </form>
+
+  <div class="card">
+    <h3>Lead List</h3>
+    <table class="table">
+      <thead><tr><th>Name</th><th>Email</th><th>Source</th><th>Tag</th><th>Added</th></tr></thead>
+      <tbody id="lead_rows"></tbody>
+    </table>
+  </div>
+</div></section>
+
+<footer>© 2025 DealFlow AI</footer>
+<script src="../assets/demo.js"></script>
+</body></html>

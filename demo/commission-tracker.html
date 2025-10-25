@@ -1,1 +1,36 @@
 
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Commission Tracker — DealFlow AI</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head><body>
+<header class="hero"><div class="wrap">
+  <img src="../assets/img/chichi.png" alt="ChiChi" />
+  <h1>Commission Tracker (Demo)</h1>
+  <p class="lead">Record deals and see your commission totals — all in your browser.</p>
+  <div class="row"><a class="btn" href="../index.html#demo">Back to Demos</a><button class="btn" onclick="exportDealsCSV()">Export CSV</button><button class="btn" onclick="resetDemoData()">Reset Demo Data</button></div>
+</div></header>
+
+<section><div class="wrap">
+  <form onsubmit="addDeal(event)" class="card">
+    <div class="grid">
+      <div><label>Deal Name</label><input id="deal_name" placeholder="Retainer — Acme Co."></div>
+      <div><label>Deal Value (USD)</label><input id="deal_value" type="number" placeholder="10000" required></div>
+      <div><label>Commission %</label><input id="commission_pct" type="number" placeholder="15" required></div>
+    </div>
+    <button class="btn" type="submit">Add Deal</button>
+  </form>
+
+  <div class="card">
+    <h3>Deals</h3>
+    <table class="table">
+      <thead><tr><th>Name</th><th>Value</th><th>Commission %</th><th>Commission</th><th>Added</th></tr></thead>
+      <tbody id="deal_rows"></tbody>
+    </table>
+    <p><strong>Total Value:</strong> <span id="sum_value">$0</span> • <strong>Total Commission:</strong> <span id="sum_comm">$0</span></p>
+  </div>
+</div></section>
+
+<footer>© 2025 DealFlow AI</footer>
+<script src="../assets/demo.js"></script>
+</body></html>

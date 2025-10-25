@@ -1,1 +1,51 @@
 
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Resale Layer — DealFlow AI</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head><body>
+<header class="hero"><div class="wrap">
+  <img src="../assets/img/chichi.png" alt="ChiChi" />
+  <h1>Resale Layer (Demo)</h1>
+  <p class="lead">Generate license keys and create referral links for your white‑label sales.</p>
+  <div class="row"><a class="btn" href="../index.html#demo">Back to Demos</a><button class="btn" onclick="resetDemoData()">Reset Demo Data</button></div>
+</div></header>
+
+<section><div class="wrap grid">
+  <div class="card">
+    <h3>Your Reseller ID</h3>
+    <p class="small">Set or auto-generate an ID to tag your sales & referral links.</p>
+    <input id="reseller_id" placeholder="R-XXXXXX">
+    <div class="row">
+      <button class="btn" onclick="setResellerId(document.getElementById('reseller_id').value)">Save ID</button>
+      <button class="btn" onclick="setResellerId(getOrSetResellerId())">Generate</button>
+    </div>
+    <label>Referral Link</label>
+    <div class="row">
+      <input id="ref_link" readonly>
+      <button class="btn" onclick="copyToClipboard(document.getElementById('ref_link').value)">Copy Link</button>
+    </div>
+    <p class="small">Visitors arriving with <code>?ref=YOUR_ID</code> will be attributed to you (client-side demo).</p>
+  </div>
+
+  <div class="card">
+    <h3>License Manager</h3>
+    <p class="small">Create simple license keys (for demo) and toggle activation.</p>
+    <div class="row"><button class="btn" onclick="generateLicense()">Generate License</button></div>
+    <p class="small">Total licenses: <strong id="lic_count">0</strong></p>
+    <table class="table">
+      <thead><tr><th>Key</th><th>Status</th><th>Created</th><th>Action</th></tr></thead>
+      <tbody id="lic_rows"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Embed Widget</h3>
+    <p class="small">Give affiliates a widget to embed on their site. Replace the URL with your hosted demo.</p>
+    <pre class="code">&lt;iframe src="https://YOURNAME.github.io/DealFlowAI-Demo/" width="100%" height="600" frameborder="0"&gt;&lt;/iframe&gt;</pre>
+  </div>
+</div></section>
+
+<footer>© 2025 DealFlow AI</footer>
+<script src="../assets/demo.js"></script>
+</body></html>

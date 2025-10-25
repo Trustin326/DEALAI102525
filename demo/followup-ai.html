@@ -1,1 +1,35 @@
 
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Follow-Up AI — DealFlow AI</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head><body>
+<header class="hero"><div class="wrap">
+  <img src="../assets/img/chichi.png" alt="ChiChi" />
+  <h1>Follow‑Up AI (Demo)</h1>
+  <p class="lead">Generate a persuasive follow-up note using ready-made tone templates.</p>
+  <div class="row"><a class="btn" href="../index.html#demo">Back to Demos</a><button class="btn" onclick="resetDemoData()">Reset Demo Data</button></div>
+</div></header>
+
+<section><div class="wrap grid">
+  <div class="card">
+    <label>Prospect Name</label><input id="prospect" placeholder="Jordan">
+    <label>Context / What you discussed</label><textarea id="context" rows="5" placeholder="Website redesign, 4-week timeline, $7,500 budget"></textarea>
+    <label>Tone</label>
+    <select id="tone">
+      <option value="friendly">Friendly</option>
+      <option value="firm">Firm</option>
+      <option value="executive">Executive</option>
+    </select>
+    <button class="btn" onclick="generateFollowup()">Generate Message</button>
+  </div>
+  <div class="card">
+    <h3>Draft</h3>
+    <textarea id="followup_result" rows="14" placeholder="Your message will appear here..."></textarea>
+    <p class="small">Copy and paste into email, DM, or CRM.</p>
+  </div>
+</div></section>
+
+<footer>© 2025 DealFlow AI</footer>
+<script src="../assets/demo.js"></script>
+</body></html>

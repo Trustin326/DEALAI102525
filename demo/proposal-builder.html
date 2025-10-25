@@ -1,1 +1,34 @@
 
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Proposal Builder — DealFlow AI</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head><body>
+<header class="hero"><div class="wrap">
+  <img src="../assets/img/chichi.png" alt="ChiChi" />
+  <h1>Proposal Builder (Demo)</h1>
+  <p class="lead">Create a branded proposal preview. Copy & paste into your doc or PDF tool.</p>
+  <div class="row"><a class="btn" href="../index.html#demo">Back to Demos</a><button class="btn" onclick="resetDemoData()">Reset Demo Data</button></div>
+</div></header>
+
+<section><div class="wrap grid">
+  <form onsubmit="generateProposal(event)" class="card">
+    <label>Client Name</label><input id="client" placeholder="Acme Co." required>
+    <label>Scope</label><textarea id="scope" rows="6" placeholder="- Strategy workshop
+- Funnel build
+- 3 follow-up emails" required></textarea>
+    <label>Project Price (USD)</label><input id="price" type="number" placeholder="7500" required>
+    <label>Terms</label><textarea id="terms" rows="3" placeholder="Net 7 terms. 50% deposit to start. Remaining due upon delivery."></textarea>
+    <button class="btn" type="submit">Generate Proposal</button>
+    <p class="small">Tip: paste the preview into Google Docs or export as PDF.</p>
+  </form>
+
+  <div class="card">
+    <h3>Preview</h3>
+    <div id="proposal_preview" style="min-height:220px"></div>
+  </div>
+</div></section>
+
+<footer>© 2025 DealFlow AI</footer>
+<script src="../assets/demo.js"></script>
+</body></html>

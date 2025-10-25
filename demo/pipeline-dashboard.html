@@ -1,1 +1,34 @@
 
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pipeline Dashboard — DealFlow AI</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head><body>
+<header class="hero"><div class="wrap">
+  <img src="../assets/img/chichi.png" alt="ChiChi" />
+  <h1>Pipeline Dashboard (Demo)</h1>
+  <p class="lead">Live KPIs computed from your browser-stored leads & deals.</p>
+  <div class="row"><a class="btn" href="../index.html#demo">Back to Demos</a><button class="btn" onclick="resetDemoData()">Reset Demo Data</button></div>
+</div></header>
+
+<section><div class="wrap grid">
+  <div class="kpi"><strong>Total Leads</strong><div id="pl_total_leads">0</div></div>
+  <div class="kpi"><strong>Total Deals</strong><div id="pl_total_deals">0</div></div>
+  <div class="kpi"><strong>Win Rate</strong><div id="pl_win_rate">0%</div></div>
+  <div class="kpi"><strong>Pipeline Value</strong><div id="pl_total_value">$0</div></div>
+  <div class="kpi"><strong>Total Commission</strong><div id="pl_total_comm">$0</div></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Funnel Preview</h2>
+  <p class="small">Add items in Lead Vault and Commission Tracker to update these bars.</p>
+  <div class="card">
+    <div class="funnel-bar"><div id="f_stage1" class="funnel-fill" style="height:28px"><span>0</span></div></div>
+    <div class="funnel-bar"><div id="f_stage2" class="funnel-fill" style="height:22px"><span>0</span></div></div>
+    <div class="funnel-bar"><div id="f_stage3" class="funnel-fill" style="height:18px"><span>0</span></div></div>
+  </div>
+</div></section>
+
+<footer>© 2025 DealFlow AI</footer>
+<script src="../assets/demo.js"></script>
+</body></html>
