@@ -1,1 +1,29 @@
 
+:root{--teal:#00b4a7;--teal2:#00d4ff;--ink:#0f172a;--muted:#6b7280;--gold:#d4af37}
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#fff;color:var(--ink)}
+a{color:var(--teal)}
+header.hero{padding:70px 20px;text-align:center;background:linear-gradient(135deg,var(--teal2),var(--teal));color:#fff}
+.hero img{width:160px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.25))}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+h1{margin:10px 0 0;font-size:44px}
+h2{margin:0 0 10px}
+.lead{opacity:.95;max-width:820px;margin:10px auto}
+.btn{display:inline-block;background:#111;color:#fff;padding:12px 22px;border-radius:26px;text-decoration:none;font-weight:700;margin:6px;cursor:pointer;border:none}
+.btn.alt{background:#fff;color:#111}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{border:1px solid #e7eef0;border-radius:14px;padding:18px;background:#fafcfd}
+section{padding:48px 20px}
+footer{background:#0b1320;color:#cbd5e1;text-align:center;padding:24px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #dfe7ea;border-radius:10px;margin:8px 0}
+label{font-weight:600}
+.table{width:100%;border-collapse:collapse;margin-top:10px}
+.table th,.table td{border:1px solid #e5eef1;padding:10px;text-align:left}
+.kpi{background:#0b2d2b;color:#c9fffb;border:1px solid #174e49;padding:14px;border-radius:12px;text-align:center}
+.small{font-size:14px;color:var(--muted)}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--gold),#fffbe6);color:#111;border:1px solid #efdf9a;font-size:12px;font-weight:700}
+pre.code{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:10px;overflow:auto}
+.funnel-bar{background:#e8f4f4;border-radius:12px;overflow:hidden;margin-bottom:10px}
+.funnel-fill{background:linear-gradient(90deg,#00d4ff,#00b4a7);height:24px;display:flex;align-items:center}
+.funnel-fill span{color:#fff;font-weight:700;padding-left:12px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
