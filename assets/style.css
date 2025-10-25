@@ -27,3 +27,5 @@ pre.code{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:10px;overfl
 .funnel-fill{background:linear-gradient(90deg,#00d4ff,#00b4a7);height:24px;display:flex;align-items:center}
 .funnel-fill span{color:#fff;font-weight:700;padding-left:12px}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+/* Hide top nav on the home page */
+header.hero nav.wrap { display: none !important; }
